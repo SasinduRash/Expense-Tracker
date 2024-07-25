@@ -1,0 +1,19 @@
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\bin\Debug\Mini cash management system.exe.config
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\bin\Debug\Mini cash management system.exe
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\bin\Debug\Mini cash management system.pdb
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini cash management system.csproj.AssemblyReference.cache
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini_cash_management_system.Form1.resources
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini_cash_management_system.Properties.Resources.resources
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini_cash_management_system.signUpFrm.resources
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini cash management system.csproj.GenerateResource.cache
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini cash management system.csproj.CoreCompileInputs.cache
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini cash management system.exe
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini cash management system.pdb
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini_cash_management_system.ExpRecFrm.resources
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini_cash_management_system.IncRecFrm.resources
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini_cash_management_system.ExpCatMastFrm.resources
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini_cash_management_system.IncCatMastFrm.resources
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini_cash_management_system.LoginFrm.resources
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\MSI\OneDrive\Desktop\SRS1\Mini cash management system\obj\Debug\Mini cas.668C0442.Up2Date
