@@ -94,5 +94,12 @@ namespace Mini_cash_management_system
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            signUpFrm signUp = new signUpFrm();
+            signUp.Show();
+            this.Hide();
+        }
     }
 }
