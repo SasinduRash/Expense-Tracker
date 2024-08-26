@@ -85,5 +85,10 @@ namespace Mini_cash_management_system
                 MessageBox.Show("An unexpected error occurred: " + ex.Message);
             }
         }
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
