@@ -15,9 +15,14 @@ namespace Mini_cash_management_system
 {
     public partial class ExpRecFrm : Form
     {
+
+        private string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnection"].ConnectionString;
+        private SqlConnection connection;
+
         public ExpRecFrm()
         {
             InitializeComponent();
+            LoadDataToComboBox();
         }
 
         private void expAddBtn_Click(object sender, EventArgs e)
@@ -47,7 +52,7 @@ namespace Mini_cash_management_system
 
         public void AddExpense(string category, string description, double amount)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnection"].ConnectionString;
+            //string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnection"].ConnectionString;
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -64,6 +69,47 @@ namespace Mini_cash_management_system
                     command.ExecuteNonQuery();
                 }
             }
+        }
+
+        private void LoadDataToComboBox()
+        {
+            //string connectionString = "your_connection_string_here";
+            connection = new SqlConnection(connectionString);
+
+            try
+            {
+                connection.Open();
+
+                // Query to retrieve data
+                string query = "SELECT Category FROM ExpenseCategory";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataReader reader = command.ExecuteReader();
+
+                // Clear existing items in the ComboBox
+                expCatComboBox.Items.Clear();
+
+                // Add items from the database to the ComboBox
+                while (reader.Read())
+                {
+                    expCatComboBox.Items.Add(reader["Category"].ToString());
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        private void ExpRecFrm_Load(object sender, EventArgs e)
+        {
+            LoadDataToComboBox();
         }
     }
 }

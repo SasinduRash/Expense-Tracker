@@ -36,15 +36,17 @@
             this.expCatUpdateBtn = new System.Windows.Forms.Button();
             this.expCatDeleteBtn = new System.Windows.Forms.Button();
             this.expCatAddBtn = new System.Windows.Forms.Button();
+            this.dataGridViewExp = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExp)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(58, 59);
+            this.label1.Location = new System.Drawing.Point(65, 74);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(363, 32);
+            this.label1.Size = new System.Drawing.Size(419, 38);
             this.label1.TabIndex = 2;
             this.label1.Text = "Expense Category Master";
             // 
@@ -52,9 +54,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(60, 165);
+            this.label3.Location = new System.Drawing.Point(68, 206);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 22);
+            this.label3.Size = new System.Drawing.Size(108, 26);
             this.label3.TabIndex = 4;
             this.label3.Text = "Category";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -63,9 +65,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 125);
+            this.label2.Location = new System.Drawing.Point(68, 156);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 22);
+            this.label2.Size = new System.Drawing.Size(139, 26);
             this.label2.TabIndex = 3;
             this.label2.Text = "Category ID";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -73,17 +75,19 @@
             // expTextBox
             // 
             this.expTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.expTextBox.Location = new System.Drawing.Point(199, 165);
+            this.expTextBox.Location = new System.Drawing.Point(224, 206);
+            this.expTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.expTextBox.Name = "expTextBox";
-            this.expTextBox.Size = new System.Drawing.Size(222, 28);
+            this.expTextBox.Size = new System.Drawing.Size(249, 32);
             this.expTextBox.TabIndex = 6;
             // 
             // expIdTextBox
             // 
             this.expIdTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.expIdTextBox.Location = new System.Drawing.Point(199, 125);
+            this.expIdTextBox.Location = new System.Drawing.Point(224, 156);
+            this.expIdTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.expIdTextBox.Name = "expIdTextBox";
-            this.expIdTextBox.Size = new System.Drawing.Size(222, 28);
+            this.expIdTextBox.Size = new System.Drawing.Size(249, 32);
             this.expIdTextBox.TabIndex = 5;
             // 
             // expCatUpdateBtn
@@ -91,9 +95,10 @@
             this.expCatUpdateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.expCatUpdateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expCatUpdateBtn.ForeColor = System.Drawing.Color.White;
-            this.expCatUpdateBtn.Location = new System.Drawing.Point(189, 234);
+            this.expCatUpdateBtn.Location = new System.Drawing.Point(213, 292);
+            this.expCatUpdateBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.expCatUpdateBtn.Name = "expCatUpdateBtn";
-            this.expCatUpdateBtn.Size = new System.Drawing.Size(109, 47);
+            this.expCatUpdateBtn.Size = new System.Drawing.Size(123, 59);
             this.expCatUpdateBtn.TabIndex = 7;
             this.expCatUpdateBtn.Text = "Update";
             this.expCatUpdateBtn.UseVisualStyleBackColor = false;
@@ -104,9 +109,10 @@
             this.expCatDeleteBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.expCatDeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expCatDeleteBtn.ForeColor = System.Drawing.Color.White;
-            this.expCatDeleteBtn.Location = new System.Drawing.Point(312, 234);
+            this.expCatDeleteBtn.Location = new System.Drawing.Point(351, 292);
+            this.expCatDeleteBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.expCatDeleteBtn.Name = "expCatDeleteBtn";
-            this.expCatDeleteBtn.Size = new System.Drawing.Size(109, 47);
+            this.expCatDeleteBtn.Size = new System.Drawing.Size(123, 59);
             this.expCatDeleteBtn.TabIndex = 8;
             this.expCatDeleteBtn.Text = "Delete";
             this.expCatDeleteBtn.UseVisualStyleBackColor = false;
@@ -117,20 +123,33 @@
             this.expCatAddBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.expCatAddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expCatAddBtn.ForeColor = System.Drawing.Color.White;
-            this.expCatAddBtn.Location = new System.Drawing.Point(64, 234);
+            this.expCatAddBtn.Location = new System.Drawing.Point(72, 292);
+            this.expCatAddBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.expCatAddBtn.Name = "expCatAddBtn";
-            this.expCatAddBtn.Size = new System.Drawing.Size(109, 47);
+            this.expCatAddBtn.Size = new System.Drawing.Size(123, 59);
             this.expCatAddBtn.TabIndex = 9;
             this.expCatAddBtn.Text = "Add";
             this.expCatAddBtn.UseVisualStyleBackColor = false;
             this.expCatAddBtn.Click += new System.EventHandler(this.expCatAddBtn_Click);
             // 
+            // dataGridViewExp
+            // 
+            this.dataGridViewExp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewExp.Location = new System.Drawing.Point(78, 382);
+            this.dataGridViewExp.Name = "dataGridViewExp";
+            this.dataGridViewExp.ReadOnly = true;
+            this.dataGridViewExp.RowHeadersWidth = 62;
+            this.dataGridViewExp.RowTemplate.Height = 28;
+            this.dataGridViewExp.Size = new System.Drawing.Size(405, 178);
+            this.dataGridViewExp.TabIndex = 11;
+            // 
             // ExpCatMastFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(902, 726);
             this.ControlBox = false;
+            this.Controls.Add(this.dataGridViewExp);
             this.Controls.Add(this.expCatAddBtn);
             this.Controls.Add(this.expCatDeleteBtn);
             this.Controls.Add(this.expCatUpdateBtn);
@@ -140,8 +159,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ExpCatMastFrm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,5 +178,6 @@
         private System.Windows.Forms.Button expCatUpdateBtn;
         private System.Windows.Forms.Button expCatDeleteBtn;
         private System.Windows.Forms.Button expCatAddBtn;
+        private System.Windows.Forms.DataGridView dataGridViewExp;
     }
 }
