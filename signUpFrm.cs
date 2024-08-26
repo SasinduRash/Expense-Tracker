@@ -86,9 +86,11 @@ namespace Mini_cash_management_system
             }
         }
 
-        private void cancelBtn_Click(object sender, EventArgs e)
+        private void backBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            LoginFrm loginFrm = new LoginFrm();
+            loginFrm.Show();
+            this.Hide();
         }
     }
 }

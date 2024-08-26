@@ -37,7 +37,7 @@
             this.signBtn = new System.Windows.Forms.Button();
             this.pwShowCheckBox = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cancelBtn = new System.Windows.Forms.Button();
+            this.backBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,7 +96,7 @@
             this.signBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.signBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signBtn.ForeColor = System.Drawing.Color.White;
-            this.signBtn.Location = new System.Drawing.Point(717, 409);
+            this.signBtn.Location = new System.Drawing.Point(702, 409);
             this.signBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.signBtn.Name = "signBtn";
             this.signBtn.Size = new System.Drawing.Size(123, 59);
@@ -129,19 +129,19 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // cancelBtn
+            // backBtn
             // 
-            this.cancelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelBtn.ForeColor = System.Drawing.Color.White;
-            this.cancelBtn.Location = new System.Drawing.Point(483, 409);
-            this.cancelBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(123, 59);
-            this.cancelBtn.TabIndex = 17;
-            this.cancelBtn.Text = "Cancel";
-            this.cancelBtn.UseVisualStyleBackColor = false;
-            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
+            this.backBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backBtn.ForeColor = System.Drawing.Color.White;
+            this.backBtn.Location = new System.Drawing.Point(489, 409);
+            this.backBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(123, 59);
+            this.backBtn.TabIndex = 17;
+            this.backBtn.Text = "Back";
+            this.backBtn.UseVisualStyleBackColor = false;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
             // signUpFrm
             // 
@@ -150,7 +150,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(900, 562);
             this.ControlBox = false;
-            this.Controls.Add(this.cancelBtn);
+            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pwShowCheckBox);
             this.Controls.Add(this.signBtn);
@@ -179,6 +179,6 @@
         private System.Windows.Forms.Button signBtn;
         private System.Windows.Forms.CheckBox pwShowCheckBox;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button cancelBtn;
+        private System.Windows.Forms.Button backBtn;
     }
 }
