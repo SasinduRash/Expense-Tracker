@@ -14,14 +14,19 @@ namespace Mini_cash_management_system
 {
     public partial class IncRecFrm : Form
     {
+
+        private string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnection"].ConnectionString;
+        private SqlConnection connection;
+
         public IncRecFrm()
         {
             InitializeComponent();
+            LoadDataToComboBox();
         }
 
         private void IncRecFrm_Load(object sender, EventArgs e)
         {
-
+            LoadDataToComboBox();
         }
 
         private void incAddBtn_Click(object sender, EventArgs e)
@@ -51,8 +56,6 @@ namespace Mini_cash_management_system
 
         public void AddIncome(string category, string description, double amount)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnection"].ConnectionString;
-
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -67,6 +70,42 @@ namespace Mini_cash_management_system
 
                     command.ExecuteNonQuery();
                 }
+            }
+        }
+
+        private void LoadDataToComboBox()
+        {
+            //string connectionString = "your_connection_string_here";
+            connection = new SqlConnection(connectionString);
+
+            try
+            {
+                connection.Open();
+
+                // Query to retrieve data
+                string query = "SELECT Category FROM IncomeCategory";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataReader reader = command.ExecuteReader();
+
+                // Clear existing items in the ComboBox
+                incCatComboBox.Items.Clear();
+
+                // Add items from the database to the ComboBox
+                while (reader.Read())
+                {
+                    incCatComboBox.Items.Add(reader["Category"].ToString());
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
             }
         }
     }

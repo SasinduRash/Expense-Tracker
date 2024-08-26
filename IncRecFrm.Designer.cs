@@ -43,9 +43,10 @@
             this.incAddBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.incAddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.incAddBtn.ForeColor = System.Drawing.Color.White;
-            this.incAddBtn.Location = new System.Drawing.Point(414, 330);
+            this.incAddBtn.Location = new System.Drawing.Point(466, 412);
+            this.incAddBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.incAddBtn.Name = "incAddBtn";
-            this.incAddBtn.Size = new System.Drawing.Size(109, 47);
+            this.incAddBtn.Size = new System.Drawing.Size(123, 59);
             this.incAddBtn.TabIndex = 16;
             this.incAddBtn.Text = "Add";
             this.incAddBtn.UseVisualStyleBackColor = false;
@@ -54,41 +55,39 @@
             // incAmtTextBox
             // 
             this.incAmtTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incAmtTextBox.Location = new System.Drawing.Point(301, 261);
+            this.incAmtTextBox.Location = new System.Drawing.Point(339, 326);
+            this.incAmtTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.incAmtTextBox.Name = "incAmtTextBox";
-            this.incAmtTextBox.Size = new System.Drawing.Size(134, 28);
+            this.incAmtTextBox.Size = new System.Drawing.Size(150, 32);
             this.incAmtTextBox.TabIndex = 15;
             // 
             // incDesTextBox
             // 
             this.incDesTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incDesTextBox.Location = new System.Drawing.Point(301, 168);
+            this.incDesTextBox.Location = new System.Drawing.Point(339, 210);
+            this.incDesTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.incDesTextBox.Multiline = true;
             this.incDesTextBox.Name = "incDesTextBox";
-            this.incDesTextBox.Size = new System.Drawing.Size(222, 75);
+            this.incDesTextBox.Size = new System.Drawing.Size(249, 93);
             this.incDesTextBox.TabIndex = 14;
             // 
             // incCatComboBox
             // 
             this.incCatComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.incCatComboBox.FormattingEnabled = true;
-            this.incCatComboBox.Items.AddRange(new object[] {
-            "",
-            "Sales",
-            "Rent",
-            "Others"});
-            this.incCatComboBox.Location = new System.Drawing.Point(301, 113);
+            this.incCatComboBox.Location = new System.Drawing.Point(339, 141);
+            this.incCatComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.incCatComboBox.Name = "incCatComboBox";
-            this.incCatComboBox.Size = new System.Drawing.Size(226, 30);
+            this.incCatComboBox.Size = new System.Drawing.Size(254, 34);
             this.incCatComboBox.TabIndex = 13;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(55, 261);
+            this.label4.Location = new System.Drawing.Point(62, 326);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 22);
+            this.label4.Size = new System.Drawing.Size(94, 26);
             this.label4.TabIndex = 12;
             this.label4.Text = "Amount";
             // 
@@ -96,9 +95,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(55, 168);
+            this.label3.Location = new System.Drawing.Point(62, 210);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 22);
+            this.label3.Size = new System.Drawing.Size(132, 26);
             this.label3.TabIndex = 11;
             this.label3.Text = "Description";
             // 
@@ -106,9 +105,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(55, 113);
+            this.label2.Location = new System.Drawing.Point(62, 141);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 22);
+            this.label2.Size = new System.Drawing.Size(188, 26);
             this.label2.TabIndex = 10;
             this.label2.Text = "Income category";
             // 
@@ -116,17 +115,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(53, 49);
+            this.label1.Location = new System.Drawing.Point(60, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 32);
+            this.label1.Size = new System.Drawing.Size(251, 38);
             this.label1.TabIndex = 9;
             this.label1.Text = "Record Income";
             // 
             // IncRecFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 562);
             this.ControlBox = false;
             this.Controls.Add(this.incAddBtn);
             this.Controls.Add(this.incAmtTextBox);
@@ -137,6 +136,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "IncRecFrm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.IncRecFrm_Load);
