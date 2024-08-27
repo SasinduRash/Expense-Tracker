@@ -134,13 +134,16 @@
             // 
             // dataGridViewExp
             // 
+            this.dataGridViewExp.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewExp.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewExp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewExp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewExp.Location = new System.Drawing.Point(78, 382);
             this.dataGridViewExp.Name = "dataGridViewExp";
             this.dataGridViewExp.ReadOnly = true;
             this.dataGridViewExp.RowHeadersWidth = 62;
             this.dataGridViewExp.RowTemplate.Height = 28;
-            this.dataGridViewExp.Size = new System.Drawing.Size(405, 178);
+            this.dataGridViewExp.Size = new System.Drawing.Size(424, 272);
             this.dataGridViewExp.TabIndex = 11;
             // 
             // ExpCatMastFrm
@@ -162,6 +165,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ExpCatMastFrm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.ExpCatMastFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
