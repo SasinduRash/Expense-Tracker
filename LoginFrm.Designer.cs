@@ -163,7 +163,7 @@
             this.button1.Location = new System.Drawing.Point(251, 363);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(61, 31);
+            this.button1.Size = new System.Drawing.Size(65, 34);
             this.button1.TabIndex = 17;
             this.button1.Text = "Sign up";
             this.button1.UseVisualStyleBackColor = false;
