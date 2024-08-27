@@ -12,18 +12,12 @@ namespace Mini_cash_management_system
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        private string uName;
+        public Form1(string userName)
         {
             InitializeComponent();
-        }
-
-        private void signUpBtn_Click(object sender, EventArgs e)
-        {
-            signUpFrm signUp = new signUpFrm();
-            signUp.TopLevel = false;
-            panelcontent.Controls.Add(signUp);
-            signUp.BringToFront();
-            signUp.Show();
+            uName = userName; 
+            labelUsr.Text = "User : " + uName;
         }
 
         private void recExpBtn_Click(object sender, EventArgs e)
@@ -70,7 +64,7 @@ namespace Mini_cash_management_system
         private void homeBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 home = new Form1();
+            Form1 home = new Form1(uName);
             home.Show();
         }
 
