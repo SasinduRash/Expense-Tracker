@@ -65,7 +65,7 @@ namespace Mini_cash_management_system
 
                         if (dt.Rows.Count == 1)
                         {
-                            Form1 f1 = new Form1();
+                            Form1 f1 = new Form1(Uname);
                             f1.Show();
                             this.Hide();
                         }
