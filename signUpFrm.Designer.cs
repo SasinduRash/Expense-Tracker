@@ -162,7 +162,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "signUpFrm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
