@@ -36,6 +36,10 @@
             this.expDesTextBox = new System.Windows.Forms.TextBox();
             this.expAmtTextBox = new System.Windows.Forms.TextBox();
             this.expAddBtn = new System.Windows.Forms.Button();
+            this.incCatDeleteBtn = new System.Windows.Forms.Button();
+            this.incCatUpdateBtn = new System.Windows.Forms.Button();
+            this.dataGridViewExpR = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpR)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -112,7 +116,7 @@
             this.expAddBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.expAddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expAddBtn.ForeColor = System.Drawing.Color.White;
-            this.expAddBtn.Location = new System.Drawing.Point(461, 409);
+            this.expAddBtn.Location = new System.Drawing.Point(740, 138);
             this.expAddBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.expAddBtn.Name = "expAddBtn";
             this.expAddBtn.Size = new System.Drawing.Size(123, 59);
@@ -121,12 +125,55 @@
             this.expAddBtn.UseVisualStyleBackColor = false;
             this.expAddBtn.Click += new System.EventHandler(this.expAddBtn_Click);
             // 
+            // incCatDeleteBtn
+            // 
+            this.incCatDeleteBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.incCatDeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incCatDeleteBtn.ForeColor = System.Drawing.Color.White;
+            this.incCatDeleteBtn.Location = new System.Drawing.Point(740, 295);
+            this.incCatDeleteBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.incCatDeleteBtn.Name = "incCatDeleteBtn";
+            this.incCatDeleteBtn.Size = new System.Drawing.Size(123, 59);
+            this.incCatDeleteBtn.TabIndex = 20;
+            this.incCatDeleteBtn.Text = "Delete";
+            this.incCatDeleteBtn.UseVisualStyleBackColor = false;
+            // 
+            // incCatUpdateBtn
+            // 
+            this.incCatUpdateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.incCatUpdateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incCatUpdateBtn.ForeColor = System.Drawing.Color.White;
+            this.incCatUpdateBtn.Location = new System.Drawing.Point(740, 216);
+            this.incCatUpdateBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.incCatUpdateBtn.Name = "incCatUpdateBtn";
+            this.incCatUpdateBtn.Size = new System.Drawing.Size(123, 59);
+            this.incCatUpdateBtn.TabIndex = 19;
+            this.incCatUpdateBtn.Text = "Update";
+            this.incCatUpdateBtn.UseVisualStyleBackColor = false;
+            // 
+            // dataGridViewExpR
+            // 
+            this.dataGridViewExpR.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewExpR.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewExpR.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewExpR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewExpR.Location = new System.Drawing.Point(53, 393);
+            this.dataGridViewExpR.Name = "dataGridViewExpR";
+            this.dataGridViewExpR.ReadOnly = true;
+            this.dataGridViewExpR.RowHeadersWidth = 62;
+            this.dataGridViewExpR.RowTemplate.Height = 28;
+            this.dataGridViewExpR.Size = new System.Drawing.Size(810, 272);
+            this.dataGridViewExpR.TabIndex = 21;
+            // 
             // ExpRecFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.ClientSize = new System.Drawing.Size(900, 757);
             this.ControlBox = false;
+            this.Controls.Add(this.dataGridViewExpR);
+            this.Controls.Add(this.incCatDeleteBtn);
+            this.Controls.Add(this.incCatUpdateBtn);
             this.Controls.Add(this.expAddBtn);
             this.Controls.Add(this.expAmtTextBox);
             this.Controls.Add(this.expDesTextBox);
@@ -140,6 +187,7 @@
             this.Name = "ExpRecFrm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ExpRecFrm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,5 +203,8 @@
         private System.Windows.Forms.TextBox expDesTextBox;
         private System.Windows.Forms.TextBox expAmtTextBox;
         private System.Windows.Forms.Button expAddBtn;
+        private System.Windows.Forms.Button incCatDeleteBtn;
+        private System.Windows.Forms.Button incCatUpdateBtn;
+        private System.Windows.Forms.DataGridView dataGridViewExpR;
     }
 }
