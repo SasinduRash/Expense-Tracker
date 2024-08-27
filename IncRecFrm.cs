@@ -22,11 +22,13 @@ namespace Mini_cash_management_system
         {
             InitializeComponent();
             LoadDataToComboBox();
+            LoadDataToDataGridView();
         }
 
         private void IncRecFrm_Load(object sender, EventArgs e)
         {
             LoadDataToComboBox();
+            LoadDataToDataGridView();
         }
 
         private void incAddBtn_Click(object sender, EventArgs e)
@@ -44,6 +46,8 @@ namespace Mini_cash_management_system
             }
 
             AddIncome(category, description, amount);
+
+            LoadDataToDataGridView();
 
             // Display success message
             MessageBox.Show("Expense added successfully!");
@@ -91,6 +95,8 @@ namespace Mini_cash_management_system
                 // Clear existing items in the ComboBox
                 incCatComboBox.Items.Clear();
 
+                incCatComboBox.Items.Add("");
+
                 // Add items from the database to the ComboBox
                 while (reader.Read())
                 {
@@ -106,6 +112,36 @@ namespace Mini_cash_management_system
             finally
             {
                 connection.Close();
+            }
+        }
+
+        private void LoadDataToDataGridView()
+        {
+            //string connectionString = "your_connection_string_here"; // Replace with your actual connection string
+            using (connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    // Query to retrieve data from the database
+                    string query = "SELECT Category,Description,Amount,DateEntered FROM IncomeReport"; // Replace with your actual table name
+
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter(query, connection);
+
+                    // Create a DataTable to hold the data
+                    DataTable dataTable = new DataTable();
+
+                    // Fill the DataTable with data from the database
+                    dataAdapter.Fill(dataTable);
+
+                    // Bind the DataTable to the DataGridView
+                    dataGridViewIncR.DataSource = dataTable;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
             }
         }
     }
