@@ -36,6 +36,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewInc = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInc)).BeginInit();
             this.SuspendLayout();
             // 
             // incCatAddBtn
@@ -43,9 +45,10 @@
             this.incCatAddBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.incCatAddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.incCatAddBtn.ForeColor = System.Drawing.Color.White;
-            this.incCatAddBtn.Location = new System.Drawing.Point(67, 236);
+            this.incCatAddBtn.Location = new System.Drawing.Point(75, 295);
+            this.incCatAddBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.incCatAddBtn.Name = "incCatAddBtn";
-            this.incCatAddBtn.Size = new System.Drawing.Size(109, 47);
+            this.incCatAddBtn.Size = new System.Drawing.Size(123, 59);
             this.incCatAddBtn.TabIndex = 17;
             this.incCatAddBtn.Text = "Add";
             this.incCatAddBtn.UseVisualStyleBackColor = false;
@@ -56,9 +59,10 @@
             this.incCatDeleteBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.incCatDeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.incCatDeleteBtn.ForeColor = System.Drawing.Color.White;
-            this.incCatDeleteBtn.Location = new System.Drawing.Point(315, 236);
+            this.incCatDeleteBtn.Location = new System.Drawing.Point(354, 295);
+            this.incCatDeleteBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.incCatDeleteBtn.Name = "incCatDeleteBtn";
-            this.incCatDeleteBtn.Size = new System.Drawing.Size(109, 47);
+            this.incCatDeleteBtn.Size = new System.Drawing.Size(123, 59);
             this.incCatDeleteBtn.TabIndex = 16;
             this.incCatDeleteBtn.Text = "Delete";
             this.incCatDeleteBtn.UseVisualStyleBackColor = false;
@@ -69,9 +73,10 @@
             this.incCatUpdateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.incCatUpdateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.incCatUpdateBtn.ForeColor = System.Drawing.Color.White;
-            this.incCatUpdateBtn.Location = new System.Drawing.Point(192, 236);
+            this.incCatUpdateBtn.Location = new System.Drawing.Point(216, 295);
+            this.incCatUpdateBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.incCatUpdateBtn.Name = "incCatUpdateBtn";
-            this.incCatUpdateBtn.Size = new System.Drawing.Size(109, 47);
+            this.incCatUpdateBtn.Size = new System.Drawing.Size(123, 59);
             this.incCatUpdateBtn.TabIndex = 15;
             this.incCatUpdateBtn.Text = "Update";
             this.incCatUpdateBtn.UseVisualStyleBackColor = false;
@@ -80,26 +85,28 @@
             // incTextBox
             // 
             this.incTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incTextBox.Location = new System.Drawing.Point(202, 167);
+            this.incTextBox.Location = new System.Drawing.Point(227, 209);
+            this.incTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.incTextBox.Name = "incTextBox";
-            this.incTextBox.Size = new System.Drawing.Size(222, 28);
+            this.incTextBox.Size = new System.Drawing.Size(249, 32);
             this.incTextBox.TabIndex = 14;
             // 
             // incIdTextBox
             // 
             this.incIdTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incIdTextBox.Location = new System.Drawing.Point(202, 127);
+            this.incIdTextBox.Location = new System.Drawing.Point(227, 159);
+            this.incIdTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.incIdTextBox.Name = "incIdTextBox";
-            this.incIdTextBox.Size = new System.Drawing.Size(222, 28);
+            this.incIdTextBox.Size = new System.Drawing.Size(249, 32);
             this.incIdTextBox.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(63, 167);
+            this.label3.Location = new System.Drawing.Point(71, 209);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 22);
+            this.label3.Size = new System.Drawing.Size(108, 26);
             this.label3.TabIndex = 12;
             this.label3.Text = "Category";
             // 
@@ -107,9 +114,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(63, 127);
+            this.label2.Location = new System.Drawing.Point(71, 159);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 22);
+            this.label2.Size = new System.Drawing.Size(139, 26);
             this.label2.TabIndex = 11;
             this.label2.Text = "Category ID";
             // 
@@ -117,18 +124,33 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(61, 61);
+            this.label1.Location = new System.Drawing.Point(69, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(343, 32);
+            this.label1.Size = new System.Drawing.Size(396, 38);
             this.label1.TabIndex = 10;
             this.label1.Text = "Income Category Master";
             // 
+            // dataGridViewInc
+            // 
+            this.dataGridViewInc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewInc.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewInc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewInc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewInc.Location = new System.Drawing.Point(76, 406);
+            this.dataGridViewInc.Name = "dataGridViewInc";
+            this.dataGridViewInc.ReadOnly = true;
+            this.dataGridViewInc.RowHeadersWidth = 62;
+            this.dataGridViewInc.RowTemplate.Height = 28;
+            this.dataGridViewInc.Size = new System.Drawing.Size(424, 250);
+            this.dataGridViewInc.TabIndex = 18;
+            // 
             // IncCatMastFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(555, 690);
             this.ControlBox = false;
+            this.Controls.Add(this.dataGridViewInc);
             this.Controls.Add(this.incCatAddBtn);
             this.Controls.Add(this.incCatDeleteBtn);
             this.Controls.Add(this.incCatUpdateBtn);
@@ -138,8 +160,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "IncCatMastFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.IncCatMastFrm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,5 +181,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridViewInc;
     }
 }

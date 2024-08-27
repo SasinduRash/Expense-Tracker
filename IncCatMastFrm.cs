@@ -14,9 +14,13 @@ namespace Mini_cash_management_system
 {
     public partial class IncCatMastFrm : Form
     {
+        private string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnection"].ConnectionString;
+        private SqlConnection connection;
+
         public IncCatMastFrm()
         {
             InitializeComponent();
+            LoadDataToDataGridView();
         }
 
         private void incCatAddBtn_Click(object sender, EventArgs e)
@@ -35,7 +39,7 @@ namespace Mini_cash_management_system
 
         public void AddIncCat(string catID, string cat)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnection"].ConnectionString;
+            //string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnection"].ConnectionString;
 
             try
             {
@@ -53,6 +57,8 @@ namespace Mini_cash_management_system
                         command.ExecuteNonQuery();
                     }
                 }
+
+                LoadDataToDataGridView();
 
                 MessageBox.Show("New category added successfully!");
 
@@ -86,7 +92,7 @@ namespace Mini_cash_management_system
 
         public void UpdateIncCat(string catID, string cat)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnection"].ConnectionString;
+            //string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnection"].ConnectionString;
 
             try
             {
@@ -104,6 +110,8 @@ namespace Mini_cash_management_system
                         command.ExecuteNonQuery();
                     }
                 }
+
+                LoadDataToDataGridView();
 
                 MessageBox.Show("Income category updated successfully!");
 
@@ -139,7 +147,7 @@ namespace Mini_cash_management_system
 
         public void DeleteIncCat(string catID)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnection"].ConnectionString;
+            //string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnection"].ConnectionString;
 
             try
             {
@@ -156,6 +164,8 @@ namespace Mini_cash_management_system
                     } 
                 }
 
+                LoadDataToDataGridView();
+
                 MessageBox.Show("Income category deleted successfully!");
 
                 incIdTextBox.Text = "";
@@ -169,6 +179,41 @@ namespace Mini_cash_management_system
             {
                 MessageBox.Show("An unexpected error occurred: " + ex.Message);
             }
+        }
+
+        private void LoadDataToDataGridView()
+        {
+            //string connectionString = "your_connection_string_here"; // Replace with your actual connection string
+            using (connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    // Query to retrieve data from the database
+                    string query = "SELECT Category FROM IncomeCategory"; // Replace with your actual table name
+
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter(query, connection);
+
+                    // Create a DataTable to hold the data
+                    DataTable dataTable = new DataTable();
+
+                    // Fill the DataTable with data from the database
+                    dataAdapter.Fill(dataTable);
+
+                    // Bind the DataTable to the DataGridView
+                    dataGridViewInc.DataSource = dataTable;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+        }
+
+        private void IncCatMastFrm_Load(object sender, EventArgs e)
+        {
+            LoadDataToDataGridView();
         }
     }
 
